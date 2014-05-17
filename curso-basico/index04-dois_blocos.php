@@ -8,13 +8,15 @@
         <?php
             $teste = "Brasil";
             $php = '---$teste--\n';
-            echo "$php";
+            echo $php,$php;
         ?>
         <br />
         <?php
             $teste = "Brasil";
             $php = "---$teste--\n";
-            echo $php;
+            print $php;
+            
+            echo (2 % 3);
         ?>
     </body>
 </html>

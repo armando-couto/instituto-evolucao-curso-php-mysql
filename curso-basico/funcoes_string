@@ -1,0 +1,22 @@
+addslashes
+explode / implode
+lcfirst
+trim / ltrim / rtrim
+md5
+money_format
+number_format
+nl2br
+parse_str
+sha1
+str_pad
+str_replace
+strip_tags
+strlen
+strpos
+strstr
+strtolower
+strroupper
+substr
+ucfirst
+ucwords
+wordwrap

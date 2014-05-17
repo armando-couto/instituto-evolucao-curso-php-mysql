@@ -12,7 +12,7 @@
             
 //            $4site = "not yet";
             $_4site = "not yet";
-            $täyte = "mansikka";
+            $täyte = "mansikka"
         ?>
     </body>
 </html>

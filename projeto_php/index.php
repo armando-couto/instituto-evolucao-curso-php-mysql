@@ -1,20 +1,44 @@
 <?php include("library/util.inc") ?>
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Projeto PHP</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+
+    <title>Sistema simples em PHP</title>
+
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">  
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="/combo/1.16.1?/css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
+    
+	<!--[if lt IE 9]>
+	    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+	<![endif]-->
 </head>
 <body>
-	<h1> 
-		<?php 
-			date_default_timezone_set('America/Fortaleza');
-			echo "Passando parâmetros: " . getDayWeek(2) . " de " . getMonth(12) . "</br>"; 
-			echo "Não passando parâmetros: " . getDayWeek() . "  " . getMonth() . "</br>"; 
-			echo "Padrão Brasileiro: " . dateToBr(date('Y-m-d')) . "</br>";
-			echo "Padrão Americano: " . dateToEn(date('d/m/Y')) . "</br>";
-		?>
-	</h1>
+	<div id="layout">
+	    <?php include("template/menu.inc") ?>
+
+	    <div id="main">
+	        <div class="header">
+	            <h1>Página inicial.</h1>
+	            <h2>A subtitle for your page goes here</h2>
+	        </div>
+
+	        <div class="content">
+	            <h2 class="content-subhead">How to use this layout</h2>
+	            <p>
+	                To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
+	            </p>
+
+	        </div>
+	    </div>
+	</div>
+	<script src="js/ui.js"></script>
 </body>
 </html>

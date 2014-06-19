@@ -21,24 +21,17 @@
 	<![endif]-->
 </head>
 <body>
-	<div id="layout">
-	    <?php include("template/menu.inc") ?>
-
-	    <div id="main">
-	        <div class="header">
-	            <h1>Página inicial.</h1>
-	            <h2>A subtitle for your page goes here</h2>
-	        </div>
-
-	        <div class="content">
-	            <h2 class="content-subhead">How to use this layout</h2>
-	            <p>
-	                To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
-	            </p>
-
-	        </div>
-	    </div>
-	</div>
-	<script src="js/ui.js"></script>
+    <?php 
+    	$homeMenuSelected = CLASSSELECTED;
+	    include("template/menu.inc");
+	    $titlePage = "Página Pricipal";
+	    $SubtitlePage = "Essa página é a home do sistema.";
+	    include("template/ini_content.inc");
+    ?>
+    <h2 class="content-subhead">How to use this layout</h2>
+    <p>
+        To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
+    </p>
+    <?php include("template/fin_content.inc"); ?>
 </body>
 </html>

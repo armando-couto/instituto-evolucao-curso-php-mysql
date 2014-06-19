@@ -67,4 +67,6 @@
         	return implode("-", array_reverse(explode("/", $dateBr)));
         }
 	}
+
+	define("CLASSSELECTED", "pure-menu-selected");
 ?>

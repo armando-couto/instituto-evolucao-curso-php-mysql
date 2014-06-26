@@ -1,11 +1,11 @@
 <?php
-    require_once 'library/util.inc';
-	include_once 'template/head.inc';
-	$homeMenuSelected = CLASSSELECTED;
-    include_once 'template/menu.inc';
-    $titlePage = "Página Pricipal";
+	require_once '../../library/util.inc';
+	include_once '../../template/head.inc';
+	$newsMenuSeleted = CLASSSELECTED;
+    include_once '../../template/menu.inc';
+    $titlePage = "Notícias";
     $SubtitlePage = "Essa página é a home do sistema.";
-    include_once 'template/ini_content.inc';
+    include_once '../../template/ini_content.inc';
 ?>
 
 <h2 class="content-subhead">How to use this layout</h2>
@@ -16,4 +16,4 @@
     JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
 </p>
 
-<?php include_once 'template/fin_content.inc'; ?>
+<?php include_once '../../template/fin_content.inc'; ?>

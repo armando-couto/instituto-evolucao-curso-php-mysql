@@ -1,10 +1,10 @@
 <?php 
     switch(dirname($_SERVER['SCRIPT_NAME'])) {
-        case "/~armandocouto/projeto_php":
-        case "/~armandocouto/projeto_php/pages/about":
-        case "/~armandocouto/projeto_php/pages/news":
-        case "/~armandocouto/projeto_php/pages/people":
-           $path = 'http://localhost/~armandocouto/projeto_php';
+        case "/~armandocouto/curso-php-mysql/projeto_php":
+        case "/~armandocouto/curso-php-mysql/projeto_php/pages/about":
+        case "/~armandocouto/curso-php-mysql/projeto_php/pages/news":
+        case "/~armandocouto/curso-php-mysql/projeto_php/pages/people":
+           $path = 'http://localhost/~armandocouto/curso-php-mysql/projeto_php';
            break;
         case "http://projeto-php.herokuapp.com":
         case "http://projeto-php.herokuapp.com/pages/about":

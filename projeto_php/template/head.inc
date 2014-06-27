@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="/combo/1.16.1?/css/layouts/side-menu-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="<?php echo $path; ?>/css/layouts/side-menu.css">
+        <link rel="stylesheet" href="<?php echo $path; ?>/resources/css/layouts/side-menu.css">
     <!--<![endif]-->
     
 	<!--[if lt IE 9]>

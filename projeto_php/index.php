@@ -6,7 +6,7 @@
     $titlePage = "Página Pricipal";
     $SubtitlePage = "Essa página é a home do sistema.";
     include_once 'template/ini_content.inc';
-?>
+?> 
 
 <h2 class="content-subhead">How to use this layout</h2>
 <p>

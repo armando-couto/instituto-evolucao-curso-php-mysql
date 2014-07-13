@@ -7,7 +7,7 @@
 
     <div id="menu">
         <div class="pure-menu pure-menu-open">
-            <a class="pure-menu-heading" href="#">AJ Sistemas</a>
+            <a class="pure-menu-heading">AC Sistemas</a>
 
             <ul>
                 <li class="menu-item-divided <?php echo $homeMenuSelected; ?>">

@@ -1,0 +1,34 @@
+
+CREATE TABLE estados (
+    id int(5) AUTO_INCREMENT,
+    nome varchar(30) NOT NULL,
+    sigla varchar(50),
+    PRIMARY KEY (id)
+)
+
+insert into estados values	(null, 'Ceará', 'CE'),
+							(null, 'São Paulo', 'SP'),
+                            (null, 'Minas Gerais', 'MG'),
+                            (null, 'Rio de Janeiro', 'RJ'),
+                            (null, 'Mato Grosso', 'MT')
+
+update estados set nome = 'Cearé 2' Where id = 2                    
+
+delete from estados where sigla = 'RJ'
+
+CREATE TABLE cidades (
+    id int(5) AUTO_INCREMENT,
+    estado_id int(5) NOT NULL,
+    nome varchar(30) NOT NULL,
+    PRIMARY KEY (id)
+)
+
+insert into cidades values 	(null, 1,'Fortaleza'),
+							(null, 2,'São Paulo'),
+                            (null, 3,'Belo Horizonte'),
+                            (null, 4,'Rio de Janeiro'),
+                            (null, 5,'Cuiabá')
+
+select e.nome from estados e Order BY e.nome LIMIT 2
+
+select e.nome from cidades c, estados e where e.id = c.estado_id

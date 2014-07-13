@@ -24,18 +24,14 @@
     <!--<![endif]-->
 </head>
 <body>
-	<fieldset>
-        <legend>Projeto em PHP</legend>
+	<h3><?php echo $_GET['msg']; ?></h3>
 
-		<form action="main.php" method="post" class="pure-form">
-	  		<input type="text" id="user" placeholder="Usuário" />
-	  		<input type="password" id="password" placeholder="Senha" />
-
-	  		<label for="remember">
-	            <input id="remember" type="checkbox"> Remember me
-	        </label>
-	  		<button type="submit" class="pure-button pure-button-primary">Sign in</button>
-		</form>		
-	</fieldset>
+	<form action="../library/logar.php" method="post" class="pure-form">
+  		<input type="text" name="email" placeholder="Email" />
+  		<input type="password" name="password" placeholder="Senha" />
+  		
+  		<button type="submit" class="pure-button pure-button-primary">Logar</button>
+	</form>		
+	
 </body>
 </html>

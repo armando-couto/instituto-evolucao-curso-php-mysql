@@ -1,9 +1,9 @@
 <?php
-	require_once '../../library/util.inc';
 	include_once '../../template/head.inc';
-	$newsMenuSeleted = CLASSSELECTED;
+    require_once '../../library/util.inc';
+	$aboutMenuSelected = CLASSSELECTED;
     include_once '../../template/menu.inc';
-    $titlePage = "Notícias";
+    $titlePage = "Sobre";
     $SubtitlePage = "Essa página é a home do sistema.";
     include_once '../../template/ini_content.inc';
 ?>

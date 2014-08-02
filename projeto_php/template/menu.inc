@@ -14,13 +14,13 @@
                     <a href="<?php echo $path; ?>/index.php">Home</a>
                 </li>
                 <li class="<?php echo $peopleMenuSelected; ?>">
-                    <a href="<?php echo $path; ?>/pages/people/index.php">People</a>
+                    <a href="<?php echo $path; ?>/modules/people/index.php?action=people">People</a>
                 </li>
                 <li class="<?php echo $newsMenuSeleted; ?>">
-                    <a href="<?php echo $path; ?>/pages/news/index.php">News</a>
+                    <a href="<?php echo $path; ?>/modules/news/index.php?action=news">News</a>
                 </li>
                 <li class="<?php echo $aboutMenuSelected; ?>">
-                    <a href="<?php echo $path; ?>/pages/about/index.php">About</a>
+                    <a href="<?php echo $path; ?>/modules/about/index.php?action=about">About</a>
                 </li>
             </ul>
         </div>

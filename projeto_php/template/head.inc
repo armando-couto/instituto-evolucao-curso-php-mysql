@@ -3,21 +3,21 @@
 
     switch(dirname($_SERVER['SCRIPT_NAME'])) {
         case "/~armandocouto/projeto_php":
-        case "/~armandocouto/projeto_php/pages/about":
-        case "/~armandocouto/projeto_php/pages/news":
-        case "/~armandocouto/projeto_php/pages/people":
+        case "/~armandocouto/projeto_php/modules/about":
+        case "/~armandocouto/projeto_php/modules/news":
+        case "/~armandocouto/projeto_php/modules/people":
            $path = 'http://localhost/~armandocouto/projeto_php';
            break;
         case "http://projeto-php.herokuapp.com":
-        case "http://projeto-php.herokuapp.com/pages/about":
-        case "http://projeto-php.herokuapp.com/pages/news":
-        case "http://projeto-php.herokuapp.com/pages/people":
+        case "http://projeto-php.herokuapp.com/modules/about":
+        case "http://projeto-php.herokuapp.com/modules/news":
+        case "http://projeto-php.herokuapp.com/modules/people":
             $path = 'http://projeto-php.herokuapp.com';
             break;
     }   
 
-    if ( !isset($_SESSION['dados'])) {
-        header("Location: {$path}/pages/login.php");
+    if ( !isset($_SESSION['dados']) || (isset($_SESSION['dados']) && empty($_SESSION['dados']))) {
+        header("Location: {$path}/modules/login.php");
         die();
     }
  ?>
@@ -36,7 +36,7 @@
         <link rel="stylesheet" href="/combo/1.16.1?/css/layouts/side-menu-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="<?php echo $path; ?>/resources/css/layouts/side-menu.css">
+        <link rel="stylesheet" href="<?php echo $path; ?>/public/css/layouts/side-menu.css">
     <!--<![endif]-->
     
     <!--[if lt IE 9]>

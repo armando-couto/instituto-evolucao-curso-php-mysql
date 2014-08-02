@@ -1,6 +1,6 @@
 <?php
-    require_once 'library/util.inc';
 	include_once 'template/head.inc';
+    require_once 'library/util.inc';
 	$homeMenuSelected = CLASSSELECTED;
     include_once 'template/menu.inc';
     $titlePage = "Página Pricipal";

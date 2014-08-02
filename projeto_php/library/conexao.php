@@ -4,7 +4,7 @@
 	$user = "bc2ad44aedc9d6";
 	$password = "6beded56";
 
-	$conexao = mysql_connect($host, $user, $password) or die("Erro ao conectar!");
+	$conexao = mysql_connect($host, $user, $password) or die('Erro ao conectar ao banco de dados!');
 
 	mysql_select_db($base, $conexao);
 
@@ -12,10 +12,6 @@
 		$email = mysql_real_escape_string($email);
 		$password = mysql_real_escape_string($password);
 
-		$query = mysql_query("SELECT id, nome, email  FROM User WHERE email = '{$email}' AND senha = MD5('{$password}') AND status <> 0 ");
-
-		while ($row = mysql_fetch_assoc($query)) {
-			return $row;
-		}
+		return mysql_query("SELECT id, nome, email  FROM User WHERE email = '{$email}' AND senha = MD5('{$password}') AND status <> 0 ");
 	}
  ?>
